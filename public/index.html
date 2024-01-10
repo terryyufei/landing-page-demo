@@ -5,70 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disheey</title>
-    <link rel="stylesheet" href="/src/input.css">
-     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/public/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div> <!--wrapper-->
-        <div>
-            <nav>
-                <img src="/public/img/Disheey-logo.png" alt="logo">
-                <a href="/">Home</a>
-                <button>Book Demo</button>
+<body class="font-body">
+    <div class="bg-navorange md:h-screen"> <!--wrapper-->
+
+        <div class="">
+            <nav class="flex items-center ">
+                <img src="/public/img/Disheey-logo.png" class="ml-10" alt="logo">
+
+                <!-- burger menu 
+                <div class="px-4 cursor-pointer md:hidden" id="burger">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </div> -->
+                <div class="ml-auto" id="menu">
+                    <a href="/" class="pr-8 text-white">Home</a>
+                    <button class="btn mr-40">Book Demo</button>
+                </div>
             </nav>
+        </div>
+        <!-- +++++++++++++Home+++++++++++++ -->
+        <div class="md:ml-60  md:pt-10 p-10">
+            <h1 class="text-neworange font-bold md:text-7xl tracking-wide pb-10 leading-normal text-balance">
+                The only Tool Your Restaurant Needs
+            </h1>
+            <p class="text-neworange tracking-wide pb-20 md:text-lg text-balance">
+                Streamline operations, enhance customer experinces,<br>boost your restaurant's effiency, and more
+            </p>
+            <button class="btn md:mt-20">Book
+                Demo</button>
         </div>
     </div>
 
     <main>
-        <!-- +++++++++++++Home+++++++++++++ -->
-        <div>
-            <h1>
-                The only Tool Your Restaurant Needs
-            </h1>
-            <p>
-                Streamline operations, enhance customer experinces, boost your restaurant's effiency, and more
-            </p>
-            <button>Book Demo</button>
-        </div>
-
-
         <!-- +++++++++++++++++WHAT WE CAN DO++++++++++++++++ -->
-        <div>
+        <div class="mt-8 grid lg:grid-cols-2 gap-10 pb-16">
             <!-- update -->
-            <div>
-                <h2>Update Your menu In seconds</h2>
-                <p>
-                    Whether it’s adding a chef’s special, adjusting your menu items, playing around with your prices, or
-                    experimenting with new flavors, our system lets you do that in seconds.
+            <div class="p-8">
+                <h2 class="font-bold text-lg mb-2">Update Your Menu In seconds</h2>
+                <p class="text-gray-600">
+                    Whether it’s adding a chef’s special, adjusting your menu items,<br> playing around with your
+                    prices, or
+                    experimenting with new flavors,<br> our system lets you do that in seconds.
                 </p>
                 <img src="/public/img/Orange-menu.png" alt="menu">
             </div>
 
             <!-- Shorter wait times -->
-            <div>
-                <h2>Guarantee Shorter Wait Times</h2>
-                <p>
-                    Time is money and we ensure you make yours by empowering your staff for faster and better services.
+            <div class="p-8">
+                <h2 class="font-bold text-lg mb-2">Guarantee Shorter Wait Times</h2>
+                <p class="text-gray-600">
+                    Time is money and we ensure you make yours by empowering <br> your staff for faster and better
+                    services.
                 </p>
                 <img src="/public/img/Orange-cup-of-tea-5.png" alt="cup of tea">
             </div>
 
             <!-- Track sales -->
-            <div>
-                <h2>Track Sales And Inventory</h2>
-                <p>
-                    Gain complete control over your inventory and sales data, minimizing waste and optimizing your menu
+            <div class="p-8">
+                <h2 class="font-bold text-lg mb-2">Track Sales And Inventory</h2>
+                <p class="text-gray-600">
+                    Gain complete control over your inventory and sales data, <br> minimizing waste and optimizing your
+                    menu
                     for profitability.
                 </p>
                 <img src="/public/img/graph.png" alt="graph">
             </div>
 
             <!-- Manage orders -->
-            <div>
-                <h2>Manage Your Orders In Real-Time</h2>
-                <p>
-                    Effortlessly manage your orders with real-time updates, reducing wait times and enhancing customer
+            <div class="p-8">
+                <h2 class="font-bold text-lg mb-2">Manage Your Orders In Real-Time</h2>
+                <p class="text-gray-600">
+                    Effortlessly manage your orders with real-time updates, reducing wait<br>times and enhancing
+                    customer
                     satisfaction.
                 </p>
                 <img src="/public/img/drumsticks.png" alt="drumsticks">
@@ -77,65 +92,80 @@
         </div>
 
         <!-- +++++++++++++++++++++++++++++++TESTIMONIALS+++++++++++++++++++++++++++ -->
-        <div>
-            <div>
-                <h4>Testimonials</h4>
-                <h3>What They Say</h3>
+        <div class="bg-gray-200 ">
+            <div class="pt-10 text-center">
+                <h4 class="text-orange-500">Testimonials</h4>
+                <h3 class="text-orange-500 font-bold text-4xl">What They Say</h3>
             </div>
 
-            <!-- Dave -->
-            <div>
-                <p>
-                    The Team at Disheey has been very helpful with making sure our menus are updated, showed us how to
-                    use the platform and went out of their way to make sure we have a smooth process. I would recommend
-                    it to anyone running a restaurant.
-                </p>
-                <p>DAVE</p>
-            </div>
+            <div class="mt-8 grid lg:grid-cols-3 pb-16 gap-4">
 
-            <!-- Paul -->
-            <div>
-                <p>
-                    We just started using Disheey and can already see a difference. Customers are appreciating our
-                    shorter wait times and improved customer service. My only regret is that we didn't start using
-                    Disheey sooner.
-                    10/10 would definitely recommend
-                </p>
-                <p>PAUL</p>
-            </div>
+                <!-- Dave -->
+                <div class=" lg:w-2/3 bg-gray-100 rounded m-4 shadow-lg  hover:shadow-2xl">
+                    <p class="p-6 text-center">
+                        The Team at Disheey has been very helpful with making sure our menus are updated, showed us how
+                        to
+                        use the platform and went out of their way to make sure we have a smooth process. I would
+                        recommend
+                        it to anyone running a restaurant.
+                    </p>
+                    <p class="text-center mb-4">DAVE</p>
+                </div>
 
-            <!-- Cecilia -->
-            <div>
-                <p>
-                    I have always been interested in technology and I am pleased that even at my old age, I can easily
-                    understand what is going on at my restaurant using Disheey. I am passionate about helping people
-                    make memories and I am happy that Disheey makes it easier.
-                </p>
-                <p>CECILIA</p>
+                <!-- Paul -->
+                <div class=" lg:w-2/3 bg-gray-100 rounded m-4 shadow-lg  hover:shadow-2xl">
+                    <p class="p-6 text-center">
+                        We just started using Disheey and can already see a difference. Customers are appreciating our
+                        shorter wait times and improved customer service. My only regret is that we didn't start using
+                        Disheey sooner.
+                        10/10 would definitely recommend
+                    </p>
+                    <p class="text-center mb-4">PAUL</p>
+                </div>
+
+                <!-- Cecilia -->
+                <div class=" lg:w-2/3 bg-gray-100 rounded m-4 shadow-lg  hover:shadow-2xl">
+                    <p class="p-6 text-center">
+                        I have always been interested in technology and I am pleased that even at my old age, I can
+                        easily
+                        understand what is going on at my restaurant using Disheey. I am passionate about helping people
+                        make memories and I am happy that Disheey makes it easier.
+                    </p>
+                    <p class="text-center mb-4">CECILIA</p>
+                </div>
             </div>
 
         </div>
 
         <!-- +++++++++++++++++++WORK WITH US+++++++++++++++ -->
-        <div>
-            <h1>
+        <div class="flex flex-col items-center justify-center p-8 md:p-20 h-96">
+            <h1 class=" text-xl md:text-3xl font-bold mb-4">
                 Start Using Disheey Today
             </h1>
-            <p>
+            <p class="text-sm  md:text-lg text-center mb-8">
                 We understand how challenging it is to run a restaurant while remaining profitable. Schedule a demo to
                 get a glimpse of the future.
             </p>
-            <button>Book Demo</button>
+            <button
+                class="bg-orange-600 text-white px-4 py-2 rounded-full hover:bg-white hover:text-orange-700 transition ease-out duration-500">Book
+                Demo</button>
         </div>
 
         <!-- +++++++++++++++++CONTACT US++++++++++++  -->
-        <div>
-            <img src="/public/img/coffeebean.png" alt="coffee Bean">
+        <div class="bg-orange-300 relative h-96 md:pl-30 pl-10 pr-10">
+            <!-- <img src="/public/img/coffeebean.png" alt="coffee Bean" class="absolute top-0 right-0 w-18"> -->
             <img src="/public/img/Disheey-logo.png" alt="logo">
-            <div>
-                <p>
+
+            <div class="grid lg:grid-cols-3">
+                <p class="">
                     Leveraging data and technology to help restaurants become operationally effective
                 </p>
+                <p class="pb-8">Schedule a demo today</p>
+                <div class="flex items-center pr-50">
+                <button class="btn">Get Demo</button>
+                </div>
+            </div>
+            <div class="flex gap-4 text-white pt-4">
                 <a href="https://twitter.com/getdisheey" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16"
                         viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
@@ -150,17 +180,18 @@
                             d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
                     </svg>
                 </a>
-                <p>Schedule a demo today</p>
-            </div>
-            <button>Get Demo</button>
+                
+            </div>            
         </div>
 
     </main>
-    
+
     <footer class="bg-black text-white  p-6 md:flex md:justify-between text-center">
         <p class="text-sm ">Copyright © 2024 disheey-com.preview-domain.com</p>
         <p class="text-sm">Powered by disheey-com.preview-domain.com</p>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

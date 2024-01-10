@@ -3,7 +3,7 @@ module.exports = {
   content: ["./public/**/*.{html,js}"],
   presets: [],
   darkMode: 'media', // or 'class'
-  theme: {
+  theme: {    
     accentColor: ({ theme }) => ({
       ...theme('colors'),
       auto: 'auto',
@@ -310,7 +310,7 @@ module.exports = {
         '"Segoe UI Symbol"',
         '"Noto Color Emoji"',
       ],
-      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
+      serif: ['ui-serif', 'Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],      
       mono: [
         'ui-monospace',
         'SFMono-Regular',
