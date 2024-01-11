@@ -1,16 +1,17 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/**/*.{html,js}"],  
+  content: ["./public/**/*.{html,js}"],
   theme: {
     extend: {
       colors: {
-        'neworange': '#ff6900',
-        'navorange': '#FFC8C8'       
+        neworange: "#ff6900",
+        navorange: "#FFC8C8",
+        landinggrey: "#DEDAD8",
       },
       fontFamily: {
-        body: ['Roboto']
-      }
+        body: ["Roboto"],
+      },
     },
   },
   plugins: [],
-}
+};
