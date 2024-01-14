@@ -5,28 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Disheey</title>
-    <link rel="stylesheet" href="/public/output.css">
+    <link rel="stylesheet" href="output.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- iconscout stylesheet -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <!-- fontawesome  -->
+    <script src="https://kit.fontawesome.com/065d7448de.js" crossorigin="anonymous"></script>
+
 </head>
 
 <body class="font-body">
     <div class="bg-gray-300 md:h-screen min-h-screen flex flex-col"> <!--wrapper-->
         <nav class="flex items-center h-14 p-3">
 
-            <img src="/public/img/disheey_logo_2.png" class="h-5/6" alt="logo">
+            <img src="/img/disheey_logo_2.png" class="h-5/6" alt="logo">
 
-            <!-- burger menu -->
-            <div class="px-4 cursor-pointer ml-auto text-white" id="burger">
+            <div class="ml-auto flex flex-col pr-8" id="menu">
+                <ul class="text-white flex gap-6 hidden md:flex">
+                    <li><a href="#" class="hover:text-orange-500">Home</a></li>
+                    <li><a href="#about" class="hover:text-orange-500">About</a></li>
+                    <li><a href="#testimonials" class="hover:text-orange-500">Testimonials</a></li>
+                    <li><a href="#workwithus" class="hover:text-orange-500">Join us</a></li>
+                    <li><a href="#contact" class="hover:text-orange-500">Contact us</a></li>
+                </ul>
+
+            </div>
+            <div class="px-4 cursor-pointer md:hidden" id="burger">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
                 </svg>
             </div>
-            <!-- <div class="ml-auto" id="menu">
-                    <a href="/" class="pr-8 text-white">Home</a>
-                    <button class="btn mr-40">Book Demo</button>
-                </div> -->
+         
         </nav>
 
         <!-- +++++++++++++Home+++++++++++++ -->
@@ -45,7 +57,7 @@
 
     <main>
         <!-- +++++++++++++++++WHAT WE CAN DO++++++++++++++++ -->
-        <div class="mt-8 grid md:grid-cols-2 gap-10 pb-16">
+        <div class="mt-8 grid md:grid-cols-2 gap-10 pb-16" id="about">
             <!-- update -->
             <div class="p-8">
                 <h2 class="font-bold text-lg mb-2 md:text-2xl">Update Your Menu In seconds</h2>
@@ -54,7 +66,7 @@
                     prices, or
                     experimenting with new flavors,<br> our system lets you do that in seconds.
                 </p>
-                <img src="/public/img/Orange-menu.png" alt="menu">
+                <img src="/img/Orange-menu.png" alt="menu">
             </div>
 
             <!-- Shorter wait times -->
@@ -64,7 +76,7 @@
                     Time is money and we ensure you make yours by empowering <br> your staff for faster and better
                     services.
                 </p>
-                <img src="/public/img/Orange-cup-of-tea-5.png" alt="cup of tea">
+                <img src="/img/Orange-cup-of-tea-5.png" alt="cup of tea">
             </div>
 
             <!-- Track sales -->
@@ -75,7 +87,7 @@
                     menu
                     for profitability.
                 </p>
-                <img src="/public/img/graph.png" alt="graph">
+                <img src="/img/graph.png" alt="graph">
             </div>
 
             <!-- Manage orders -->
@@ -86,13 +98,13 @@
                     customer
                     satisfaction.
                 </p>
-                <img src="/public/img/drumsticks.png" alt="drumsticks">
+                <img src="/img/drumsticks.png" alt="drumsticks">
             </div>
 
         </div>
 
         <!-- +++++++++++++++++++++++++++++++TESTIMONIALS+++++++++++++++++++++++++++ -->
-        <div class="bg-gray-200 ">
+        <div class="bg-gray-200" id="testimonials">
             <div class="pt-10 text-center">
                 <h4 class="text-orange-500">Testimonials</h4>
                 <h3 class="text-orange-500 font-bold text-4xl">What They Say</h3>
@@ -138,7 +150,7 @@
         </div>
 
         <!-- +++++++++++++++++++WORK WITH US+++++++++++++++ -->
-        <div class="flex flex-col items-center justify-center p-8 md:p-20 h-96">
+        <div class="flex flex-col items-center justify-center p-8 md:p-20 h-96" id="workwithus">
             <h1 class=" text-xl md:text-3xl font-bold mb-4">
                 Start Using Disheey Today
             </h1>
@@ -152,9 +164,9 @@
         </div>
 
         <!-- +++++++++++++++++CONTACT US++++++++++++  -->
-        <div class="bg-orange-300 relative h-96 md:pl-30 pl-10 pr-10">
+        <div class="bg-orange-300 relative h-96 md:pl-30 pl-10 pr-10" id="contact">
             <!-- <img src="/public/img/coffeebean.png" alt="coffee Bean" class="absolute top-0 right-0 w-18"> -->
-            <img src="/public/img/Disheey-logo.png" alt="logo">
+            <img src="/img/Disheey-logo.png" alt="logo">
 
             <div class="grid lg:grid-cols-3">
                 <p class="">
